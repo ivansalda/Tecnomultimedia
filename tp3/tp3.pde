@@ -31,6 +31,7 @@ void draw() {
     textSize (50);
     ColorDeLetras ();
     text (Texto[0], 175, 100);
+    text ("Inico", 430, 555);
     break;
   case 1: //aldea hecho
     image (Pantalla[1], 0, 0, width, height);
@@ -38,6 +39,7 @@ void draw() {
     MiBoton (1); 
     ColorDeLetras ();
     text (Texto[1], 300, 20, width/2, 300);
+    Seguir(1);
     break;
   case 2: //bosque hecho
     image (Pantalla[2], 0, 0, width, height);
@@ -45,29 +47,37 @@ void draw() {
     MiBoton(1);
     ColorDeLetras ();
     text (Texto[2], 150, 20, width/2, 300);
+    Seguir(1);
     break;
   case 3: //trono hecho
     image (Pantalla[3], 0, 0, width, height);
+    textSize (18);
     CajaDeTexto(2);
     ColorDeLetras ();
     text (Texto[3], 300, 20, width/2, 300);
     MiBoton(2);
+    Seguir(2);
     break;
   case 4: //ruiseñor automata Hecho (conectar con la 7)
     image (Pantalla[4], 0, 0, width, height);
+    textSize (18);
     fill (0);
     text (Texto[4], 0, 100, width/2.5, 300);
     MiBoton(1);
+    Seguir(1);
     break;
   case 5: //enfermedad del emperador 
     image (Pantalla[5], 0, 0, width, height);
+    textSize (18);
     CajaDeTexto(4);
     ColorDeLetras ();
     text (Texto[5], 300, 350, width/2, 300);
     MiBoton(2);
+    Seguir(2);
     break;
   case 6: //canto salvador (Final 1)
     image (Pantalla[6], 0, 0, width, height);
+    textSize (18);
     CajaDeTexto(5);
     ColorDeLetras ();
     textSize (18);
@@ -79,51 +89,69 @@ void draw() {
     break;
   case 7: //la busqueda del regalo
     image (Pantalla[7], 0, 0, width, height);
-    CajaDeTexto(2);
+    textSize (18);
+    CajaDeTexto(8);
     ColorDeLetras ();
     text (Texto[7], 300, 50, width/2, 300);
     MiBoton(1);
+    Seguir(1);
     break;
   case 8: //la preocupacion
     image (Pantalla[8], 0, 0, width, height);
-    CajaDeTexto(2);
+    textSize (18);
+    CajaDeTexto(8);
     ColorDeLetras ();
     text (Texto[8], 300, 50, width/2, 300);
     MiBoton(1);
+    Seguir(1);
     break;
   case 9: //el regalo (Final 2)
     image (Pantalla[9], 0, 0, width, height);
-    CajaDeTexto(4);
+    textSize (18);
+    CajaDeTexto(9);
     ColorDeLetras ();
     text (Texto[9], 300, 400, width/2, 300);
     MiBoton(2);
+    Seguir(2);
     break;
   case 10: //la parca y el ruiseñor
     image (Pantalla[10], 0, 0, width, height);
+    textSize (18);
     CajaDeTexto(6);
     ColorDeLetras ();
     text (Texto[10], 0, 350, width/2, 300);
     MiBoton(1);
+    Seguir(1);
     break;
   case 11: //canto condenante
     image (Pantalla[11], 0, 0, width, height);
+    textSize (18);
     CajaDeTexto(4);
     ColorDeLetras ();
-    text (Texto[11], 300, 350, width/2, 300);
+    text (Texto[11], 300, 360, width/2, 300);
     MiBoton(2);
+    Seguir(2);
     break;
   case 12: //el final (final 3)
     image (Pantalla[12], 0, 0, width, height);
+    textSize (18);
     CajaDeTexto(7);
+    textSize (18);
     ColorDeLetras ();
     text (Texto[12], 150, 20, width/2, 300);   
     MiBoton(1);
+    textSize (50);
+    ColorDeLetras ();
+    text ("Inico", 430, 555);
     break;
   case 13: //Creditos
     image (Pantalla[13], 0, 0, width, height);
+    textSize (18);
     fill (0);
     text (Texto[13], 0, 300, width/3, 300);
     MiBoton(2);
+    ColorDeLetras ();
+    text ("Inico", 60, 555);
     break;
 
   default:
@@ -134,7 +162,7 @@ void draw() {
 
 void mousePressed () {
 
-  if ( estado == 0 ) {
+  if ( estado == 0 && (mouseX > 400 && mouseY > 450 && mouseX < 575 && mouseY < 525)) {
     estado = 1;
   } else if (estado== 1) {
     estado = 2;

@@ -24,6 +24,18 @@ void MiBoton (float valor) {
     circle (xp, yp, 90);
   }
 }
+void Seguir (float variedad) {
+  if (variedad ==1){
+    textSize (50);
+  ColorDeLetras ();
+  text ("Seguir", 410, 555);
+} else if (variedad==2) {
+  textSize (50);
+  ColorDeLetras ();
+  text ("Seguir",60, 555);
+}
+}
+
 
 void texto() {
   Texto [0]= "El Ruiseñor";
@@ -38,8 +50,8 @@ void texto() {
   Texto [9] = "Con el paso del tiempo el ruiseñor volvio y no solo el, este regreso con una bandada de ruiseñores para que se unieran para cantarle a su soberano toda la vida.";
   Texto [10] = "El ruiseñor enojado por lo que habia hecho el emperador antes le pidio a la Parca que hiciera sufrir al emperador hasta que este perezca. La parca que ya habia escuchado sobre los dotes del ruiseñor, le pidio que cantara su requiem y que cuando este terminara el emperador moriria.";
   Texto [11] ="El ruiseñor canto y se regocijo durante sus cantos, viendo como el emperador sufria lentamente, viendo como cada movimiento del emperador lo hacia sufrir cada vez mas. Cuando el ruiseñor se queda satisfecho paro.";
-  Texto [12]= "El emperador que solo podia sufrir en silencio y aceptar su final solo una ultima lagrima antes de terminar de su requiem.";
-  Texto [13]= "Imagenes: Iván Saldaña y Bing Creator (IA) \n Guion: Iván Saldaña y ChatGPT (IA)";
+  Texto [12]= "El emperador que solo podia sufrir en silencio y aceptar su final, solto una ultima lagrima antes de terminar su requiem.";
+  Texto [13]= "Imagenes: Iván Saldaña y Bing Creator (IA) \n Guion: Iván Saldaña y ChatGPT (IA) \nAutor: Hans Christian Andersen ";
 }
 void CajaDeTexto(float cuadro) {
   if (cuadro==1) {
@@ -72,6 +84,14 @@ void CajaDeTexto(float cuadro) {
     noStroke ();
     fill(0, 120);
     rect(150, 20, 300, 150);
+  } else if (cuadro ==8) {
+    noStroke ();
+    fill(0, 120);
+    rect (300, 20, 300, 180);
+  } else if (cuadro ==9) {
+    noStroke ();
+    fill(0, 120);
+    rect (300, 390, width/2, 230);
   }
 }
 
