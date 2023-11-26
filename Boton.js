@@ -1,0 +1,18 @@
+class Boton {
+  constructor () {
+    //this.opasidad = 50;
+    // this.colision;
+  }
+
+dibujar (xp,yp,tx) {
+push ();
+  textSize (40);
+  fill(0);
+  strokeWeight (3);
+  stroke(255, 207, 13);
+  rect (xp, yp, 175, 75);
+  fill (255, 207, 13);
+  text (tx, xp+10, yp+55);
+  pop();
+}
+}
