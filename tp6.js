@@ -3,6 +3,7 @@ let pantallas;
 let objAventura;
 let escritos;
 let notas;
+let xp;
 //----------------------------------------------------------------
 function preload () {
   pantallas = [];

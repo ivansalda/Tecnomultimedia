@@ -19,9 +19,7 @@ class Aventura {
       this.botonio.dibujar (400, 500, "Inicio");
       this.botonio.dibujar (50, 500, "Creditos");
       this.tecto (300, 100, 300, 50, 12, 300, 85, 40);
-      if (this.click) {
-        this.hoja = 1;
-      }
+
       break;
       //---------------------------------------------------------------
     case 1: // ALDEA
