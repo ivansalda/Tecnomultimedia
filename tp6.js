@@ -14,7 +14,7 @@ function preload () {
   notas [1] ="Los cortesanos encuentran al ruiseñor en un bosque y lo llevan al palacio para presentarlo al emperador. El ave canta maravillosamente y su melodía cautiva a todos los presentes.";
   notas [2] ="El ruiseñor real se convierte en una presencia especial en el palacio, deleitando al emperador y a toda su corte con su hermoso canto. Su música llena de emoción y autenticidad toca los corazones de todos.";
   notas [3] ="Un dia al emperador le regalan un ruiseñor mecanico el cual puede imitar su el canto del ruiseñor real, este le encanta al emperador. Le deja de prestar atención al ruiseñor real y no sabe si echarlo o no.";
-  notas [4] ="Con el tiempo, el emperador car gravemenete enfermo. Durante su enfermedad, la Parca, personificación de la muerte, se aparece ante él. El emperador teme por su vida y se siente angustiado. El ruiseñor vuelve para decidir el destino de su Suberano.";
+  notas [4] ="Con el tiempo, el emperador cae gravemenete enfermo. Durante su enfermedad, la Parca, personificación de la muerte, se aparece ante él. El emperador teme por su vida y se siente angustiado. El ruiseñor vuelve para decidir el destino de su Suberano.";
   notas [5] ="Comienza a cantar su melodia encantadora, ignorando la presencia de la Parca. Su canto llena de esperanza y calma al emperador senandolo de su enfermedad.";
   notas [6] ="El ruiseñor agradecido con el emperador, le dice que se ira un tiempo para buscarlo un regalo especial.";
   notas [7] ="Ante la tardanza de su ruiseñor el emperador se preocupa por este, mandando a sus sudbitos en su busca. Aunque no lo encuentren.";

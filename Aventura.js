@@ -1,7 +1,7 @@
 class Aventura {
   constructor (imagen, notas) {
     this.pantallas = imagen;
-    this.hoja= 0;
+    this.hoja = 0;
     this.click= false;
     this.botonio = new Boton ();
     this.textos = notas;
@@ -28,6 +28,7 @@ class Aventura {
       image (this.pantallas[1], 0, 0, width, height);
       //text (this.textos[1], 200, 200);
       this.tecto (450, 150, 300, 220, 0, 450, 50, 20);
+      this.botonio.dibujar (400, 500, "Siguiente");
 
       if (this.click) {
         this.hoja = 2;
@@ -37,6 +38,7 @@ class Aventura {
     case 2: //BOSQUE
       image (this.pantallas[2], 0, 0, width, height);
       this.tecto (270, 150, 300, 220, 1, 270, 75, 20);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 3;
       }
@@ -45,6 +47,7 @@ class Aventura {
     case 3: //TRONO
       image (this.pantallas[3], 0, 0, width, height);
       this.tecto (270, 150, 300, 220, 2, 270, 65, 20);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 4;
       }
@@ -53,6 +56,7 @@ class Aventura {
     case 4: //RUISEÑOR AUTOMATA
       image (this.pantallas[4], 0, 0, width, height);
       this.tecto (200, 450, 300, 220, 3, 200, 365, 20);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 5;
       }
@@ -60,7 +64,8 @@ class Aventura {
       //---------------------------------------------------------------
     case 5: //ENFERMADAD
       image (this.pantallas[5], 0, 0, width, height);
-      this.tecto (400, 450, 300, 220, 4, 400, 350, 19);
+      this.tecto (200, 450, 300, 220, 4, 200, 350, 19);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 6;
       }
@@ -68,7 +73,8 @@ class Aventura {
       //---------------------------------------------------------------
     case 6: //CANTO SALVADOR
       image (this.pantallas[6], 0, 0, width, height);
-      this.tecto (400, 300, 300, 220, 5, 400, 225, 19);
+      this.tecto (200, 450, 300, 220, 5, 200, 375, 19);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 7;
       }
@@ -76,6 +82,8 @@ class Aventura {
       //---------------------------------------------------------------
     case 7: //LA BUSQUEDA DEL REGALO
       image (this.pantallas[7], 0, 0, width, height);
+      this.tecto (400, 150, 300, 220, 6, 400, 100, 19);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 8;
       }
@@ -83,6 +91,8 @@ class Aventura {
       //---------------------------------------------------------------
     case 8: //LA PREOCUPACION
       image (this.pantallas[8], 0, 0, width, height);
+      this.tecto (400, 150, 300, 175, 7, 400, 100, 19);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 9;
       }
@@ -90,6 +100,9 @@ class Aventura {
       //---------------------------------------------------------------
     case 9: //EL REGALO (FINAL 2)
       image (this.pantallas[9], 0, 0, width, height);
+      this.tecto (400, 100, 300, 150, 8, 400, 50, 19);
+      this.botonio.dibujar (50, 500, "Creditos");
+      this.botonio.dibujar (400, 500, "Inicio");
       if (this.click) {
         this.hoja = 10;
       }
@@ -97,12 +110,16 @@ class Aventura {
       //---------------------------------------------------------------
     case 10: //LA PARCA Y EL RUISEÑOR
       image (this.pantallas[10], 0, 0, width, height);
+      this.tecto (200, 400, 300, 250, 9, 200, 300, 19);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 11;
       }
       break;
     case 11: //CANTO CONDENANTE
       image (this.pantallas[11], 0, 0, width, height);
+      this.tecto (150, 475, 300, 220, 10, 150, 400, 19);
+      this.botonio.dibujar (400, 500, "Siguiente");
       if (this.click) {
         this.hoja = 12;
       }
@@ -110,12 +127,16 @@ class Aventura {
       //---------------------------------------------------------------
     case 12: //JUEGO
       image (this.pantallas[14], 0, 0, width, height);
+
       if (this.click) {
         this.hoja = 13;
       }
       break;
     case 13: //EL FINAL (FINAL 3)
       image (this.pantallas[12], 0, 0, width, height);
+      this.tecto (300, 100, 300, 150, 11, 300, 50, 19);
+      this.botonio.dibujar (50, 500, "Creditos");
+      this.botonio.dibujar (400, 500, "Inicio");
       if (this.click) {
         this.hoja = 14;
       }
@@ -130,16 +151,16 @@ class Aventura {
     }
     this.click = false;
   }
-  tecto (posX, posY, tamX, tamY, n, posTX, posTY,tl) {
+  tecto (posX, posY, tamX, tamY, n, posTX, posTY, tl) {
     push ();
     stroke(255, 207, 13);
-    fill (0, 120);
+    fill (0, 150);
     rectMode (CENTER);
     rect (posX, posY, tamX, tamY, 20);
     fill (255, 207, 13);
     textAlign (CENTER);
     textSize (tl);
-    text (this.textos [n], posTX, posTY,300);
+    text (this.textos [n], posTX, posTY, 300);
     pop ();
   }
 }
