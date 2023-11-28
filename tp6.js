@@ -3,9 +3,11 @@ let pantallas;
 let objAventura;
 let escritos;
 let notas;
-let xp;
+let notaM;
+//let xp;
 //----------------------------------------------------------------
 function preload () {
+  notaM = loadImage ('data/Notamusical.png');
   pantallas = [];
   for (let i=0; i<= 14; i ++) {
     pantallas [i] = loadImage ('data/Pantalla'+i+'.jpeg');
